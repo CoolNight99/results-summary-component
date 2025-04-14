@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap");
+/* body */
+body {
+  background-color: hsl(221, 100%, 96%) !important;
+  font-family: "Hanken Grotesk", sans-serif;
+}
+body main p {
+  font-size: 1.125rem;
+}
+body main .container .row {
+  width: 37.5rem;
+  height: 25rem;
+  position: relative;
+}
+body main .container .row .card-one {
+  background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  border-radius: 1.875rem;
+  margin-right: -1.25rem;
+  position: relative;
+  z-index: 2;
+}
+body main .container .row .card-one .result-heading {
+  font-weight: 500;
+  color: hsl(241, 100%, 89%);
+}
+body main .container .row .card-one .circle {
+  background-image: linear-gradient(hsl(256, 72%, 46%), hsla(241, 72%, 46%, 0));
+  border-radius: 50%;
+  height: 12.5rem;
+  width: 12.5rem;
+  line-height: 1.875rem;
+}
+body main .container .row .card-one .circle .result {
+  font-size: 4.375rem;
+  color: hsl(0, 0%, 100%);
+  font-weight: 700;
+}
+body main .container .row .card-one .circle .out-of-100 {
+  color: hsl(241, 100%, 89%);
+  font-weight: 500;
+}
+body main .container .row .card-one .result-rank {
+  color: hsl(0, 0%, 100%);
+  font-size: 1.5625rem;
+  font-weight: 500;
+}
+body main .container .row .card-one .result-summary {
+  color: hsl(241, 100%, 89%);
+  font-weight: 500;
+}
+body main .container .row .card-two {
+  background-color: hsl(0, 0%, 100%);
+  border-top-right-radius: 1.875rem;
+  border-bottom-right-radius: 1.875rem;
+  position: relative;
+  z-index: 1;
+}
+body main .container .row .card-two .summary-heading {
+  color: hsl(224, 30%, 27%);
+  font-weight: 500;
+}
+body main .container .row .card-two .summary-card {
+  border-radius: 0.3125rem;
+}
+body main .container .row .card-two .summary-card .category .category-title {
+  font-weight: 500;
+  font-size: 0.875rem;
+}
+body main .container .row .card-two .summary-card .score {
+  font-size: 0.875rem;
+  color: hsla(224, 30%, 27%, 0.5);
+  font-weight: 500;
+}
+body main .container .row .card-two .summary-card .score .score-value {
+  color: hsl(224, 30%, 27%);
+  font-weight: 600;
+}
+body main .container .row .card-two .continue-btn {
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(224, 30%, 27%);
+  width: 12.5rem;
+  border: none;
+  border-radius: 6.25rem;
+  font-weight: 500;
+  transition: background-image 0.2s;
+}
+body main .container .row .card-two .continue-btn:hover {
+  background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+
+/* attribution */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  right: 0.625rem;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 400px) {
+  body {
+    background-color: hsl(0, 0%, 100%);
+  }
+  body main .container .row .card-one {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+  body main .container .row .card-two {
+    border-radius: 0;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

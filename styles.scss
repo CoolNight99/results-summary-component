@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* body */
+
+body {
+    background-color: hsl(221, 100%, 96%) !important;
+    font-family: "Hanken Grotesk", sans-serif;
+
+    main {
+        p {
+            font-size: 1.125rem;
+        }
+
+        .container {
+            .row {
+                width: 37.5rem;
+                height: 25rem;
+                position: relative;
+
+                .card-one {
+                    background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+                    border-radius: 1.875rem;
+                    margin-right: -1.25rem;
+                    position: relative;
+                    z-index: 2;
+
+                    .result-heading {
+                        font-weight: 500;
+                        color: hsl(241, 100%, 89%);
+                    }
+
+                    .circle {
+                        background-image: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+                        border-radius: 50%;
+                        height: 12.5rem;
+                        width: 12.5rem;
+                        line-height: 1.875rem;
+
+                        .result {
+                            font-size: 4.375rem;
+                            color: hsl(0, 0%, 100%);
+                            font-weight: 700;
+                        }
+
+                        .out-of-100 {
+                            color: hsl(241, 100%, 89%);
+                            font-weight: 500;
+                        }
+                    }
+
+                    .result-rank {
+                        color: hsl(0, 0%, 100%);
+                        font-size: 1.5625rem;
+                        font-weight: 500;
+                    }
+
+                    .result-summary {
+                        color: hsl(241, 100%, 89%);
+                        font-weight: 500;
+                    }
+                }
+
+                .card-two {
+                    background-color: hsl(0, 0%, 100%);
+                    border-top-right-radius: 1.875rem;
+                    border-bottom-right-radius: 1.875rem;
+                    position: relative;
+                    z-index: 1;
+
+                    .summary-heading {
+                        color: hsl(224, 30%, 27%);
+                        font-weight: 500;
+                    }
+
+                    .summary-card {
+                        border-radius: 0.3125rem;
+
+                        .category {
+                            .category-title {
+                                font-weight: 500;
+                                font-size: 0.875rem;
+                            }
+                        }
+
+                        .score {
+                            font-size: 0.875rem;
+                            color: hsla(224, 30%, 27%, 50%);
+                            font-weight: 500;
+
+                            .score-value {
+                                color: hsl(224, 30%, 27%);
+                                font-weight: 600;
+                            }
+                        }
+                    }
+
+                    .continue-btn {
+                        color: hsl(0, 0%, 100%);
+                        background-color: hsl(224, 30%, 27%);
+                        width: 12.5rem;
+                        border: none;
+                        border-radius: 6.25rem;
+                        font-weight: 500;
+                        transition: background-image 0.2s;
+                    }
+
+                    .continue-btn:hover {
+                        background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* attribution */
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    right: 0.625rem;
+
+    a {
+        color: hsl(228, 45%, 44%);
+    }
+}
+
+@media(max-width: 400px) {
+    body {
+        background-color: hsl(0, 0%, 100%);
+
+        main {
+            .container {
+                .row {
+                    .card-one {
+                        border-top-left-radius: 0;
+                        border-top-right-radius: 0;
+                    }
+
+                    .card-two {
+                        border-radius: 0;
+                    }
+                }
+            }
+        }
+    }
+}
